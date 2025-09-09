@@ -1,0 +1,27 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\user\Documents\LTspice\Draft1.net
+Start Time: Tue Sep  9 06:23:43 2025
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node n005 is floating.
+WARNING: Node n007 is floating.
+
+Direct Newton iteration for .op point succeeded.
+.step r=10
+.step r=20
+.step r=30
+.step r=40
+.step r=50
+.step r=60
+.step r=70
+.step r=80
+.step r=90
+.step r=100
+Total elapsed time: 0.274 seconds.
+
+Files loaded:
+C:\Users\user\Documents\LTspice\Draft1.net
+
