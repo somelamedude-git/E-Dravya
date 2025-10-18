@@ -12,4 +12,6 @@ class Herb(Base):
     starch_present = Column(Boolean, default=False)
     conductivity = Column(Float)
     brix_score = Column(Float, CheckConstraint('brix_score>=0 AND brix_score <=100'))
+    flavinoid_present = Column(Boolean, default = False)
+
 

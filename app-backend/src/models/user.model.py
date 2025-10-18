@@ -16,3 +16,5 @@ class User(Base):
     password = Column(String)
     user_id: Mapped[int] = mapped_column(primary_key=True)
     herbs: Mapped[list(Herb)] = relationship(secondary=user_herbs)
+    org_id : Mapped[int] = mapped_column(ForeignKey("Organisation.organisation_id"))
+    organisation: Mapped["Organisation"] = relationship(back_populates("users")

@@ -14,6 +14,6 @@ class Organisation(Base):
     organisation_id:Mapped[int] = mapped_column(primary_key=True)
     organisation_name = Column(String)
     herbs:Mapped[list[Herb]] = relationship(secondary=organisation_herbs)
-
+    users: Mapped[list("User")] = relationship(back_populates="organisation")
 
 
